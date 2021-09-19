@@ -5,3 +5,5 @@
 /src/SampleConsoleApp/SampleConsoleApp/obj
 /src/SampleConsoleApp/SampleConsoleApp/bin/Debug/net5.0
 /src/SampleConsoleApp/.vs/SampleConsoleApp
+/src/SampleConsoleApp/SampleConsoleAppTests/obj
+/src/SampleConsoleApp/SampleConsoleAppTests/bin/Debug/.netcoreapp,version=v5.0

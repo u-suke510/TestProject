@@ -7,3 +7,7 @@
 /src/SampleConsoleApp/.vs/SampleConsoleApp
 /src/SampleConsoleApp/SampleConsoleAppTests/obj
 /src/SampleConsoleApp/SampleConsoleAppTests/bin/Debug/.netcoreapp,version=v5.0
+/src/SampleWebApp/SampleWebApp/bin/Debug/net5.0
+/src/SampleWebApp/SampleWebApp/obj
+/src/SampleWebApp/SampleWebAppTests/bin/Debug/.netcoreapp,version=v5.0
+/src/SampleWebApp/SampleWebAppTests/obj

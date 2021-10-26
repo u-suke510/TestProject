@@ -1,0 +1,37 @@
+﻿@model FormViewModel
+@using SampleWebApp.ViewModels.User
+@{
+    ViewData["Title"] = "UserForm Page";
+}
+
+<form class="container" method="post" asp-action="Form">
+    <div class="row">
+        @Html.ValidationMessage("ExistUser", new { @class= "col-12 text-danger" })
+        <div class="col-12 form-group">
+            @Html.LabelFor(Model => Model.Name)
+            @Html.TextBoxFor(Model => Model.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(Model => Model.Name, null, new { @class = "invalid-feedback" })
+        </div>
+        <div class="col-12 form-group">
+            @Html.LabelFor(Model => Model.Email)
+            @Html.TextBoxFor(Model => Model.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(Model => Model.Email, null, new { @class = "invalid-feedback" })
+        </div>
+        <div class="col-12 form-group">
+            @Html.LabelFor(Model => Model.Birthday)
+            @Html.TextBoxFor(Model => Model.Birthday, new { @class = "form-control" })
+            @Html.ValidationMessageFor(Model => Model.Birthday, null, new { @class = "invalid-feedback" })
+        </div>
+        <div class="col-12 btn-group">
+            <div class="col-md-3 offset-md-3">
+                @Html.HiddenFor(Model => Model.Id)
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+            <div class="col-md-3">
+                @Html.ActionLink("back", "Index", "User", null, new { @class = "btn btn-secondary btn-block" })
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="~/js/user/form.js" asp-append-version="true"></script>

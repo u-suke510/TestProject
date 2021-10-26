@@ -1,0 +1,49 @@
+﻿#menuContent {
+}
+#menuContent > a:not(:first-of-type) {
+    margin-left: 10px;
+}
+
+#lstContent {
+}
+#lstContent > div {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+#lstContent > div > div {
+    display: table-row;
+}
+#lstContent > div > div > div {
+    display: table-cell;
+    border: solid 1px #CCC;
+    padding: 3px;
+}
+#lstContent > div > div.header > div {
+    color: #FFF;
+    font-weight: bold;
+    background: #808080;
+}
+
+.w-checkbox {
+    width: 36px;
+    text-align: center;
+}
+input[type=checkbox] {
+    display: none;
+}
+.checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border: solid 1px #D0D0D0;
+    border-radius: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+}
+input[type=checkbox]:checked + .checkbox-icon {
+    background-color: #00AAEB;
+    border-width: 2px;
+    border-color: #FFFFFF;
+}

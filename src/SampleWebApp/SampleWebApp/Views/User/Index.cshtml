@@ -1,0 +1,28 @@
+﻿@model IndexViewModel
+@using SampleWebApp.ViewModels.User
+@{
+    ViewData["Title"] = "UserList Page";
+}
+<link rel="stylesheet" href="~/css/user/index.css" asp-append-version="true" />
+
+<div id="menuContent">
+    @Html.ActionLink("Add", "Form", "User", null, new { id = "btnAdd" })
+    @Html.ActionLink("Edit", "Form", "User", null, new { id = "btnEdit" })
+    @Html.ActionLink("Delete", "Delete", "User", null, new { id = "btnDelete" })
+</div>
+<div id="lstContent">
+    <div>
+        <div class="header">
+            <div class="w-checkbox"></div>
+            <div>Name</div>
+            <div>Email</div>
+        </div>
+        <partial name="_UserList" model="Model.Items" />
+    </div>
+</div>
+
+<script src="~/js/user/index.js" asp-append-version="true"></script>
+<script type="text/javascript">
+    $("#btnEdit").on("click", ClickBtnEdit);
+    $("#btnDelete").on("click", ClickBtnDelete);
+</script>
